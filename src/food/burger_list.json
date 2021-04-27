@@ -8,5 +8,85 @@
     "id": 2,
     "name": "더블 필레오피쉬",
     "image": "../images/burger/double_filet_o_fish.png"
+  },
+  {
+    "id": 3,
+    "name": "1955 버거",
+    "image": "../images/burger/1955.png"
+  },
+  {
+    "id": 4,
+    "name": "빅맥",
+    "image": "../images/burger/big_mac.png"
+  },
+  {
+    "id": 5,
+    "name": "맥스파이시 상하이 버거",
+    "image": "../images/burger/mcspicy_shanghai.png"
+  },
+  {
+    "id": 6,
+    "name": "맥치킨",
+    "image": "../images/burger/mcchicken.png"
+  },
+  {
+    "id": 7,
+    "name": "맥치킨 모짜렐라",
+    "image": "../images/burger/mcchicken_mozzarella.png"
+  },
+  {
+    "id": 8,
+    "name": "더블 불고기 버거",
+    "image": "../images/burger/double_bulgogi.png"
+  },
+  {
+    "id": 9,
+    "name": "에그 불고기 버거",
+    "image": "../images/burger/egg_bulgogi.png"
+  },
+  {
+    "id": 10,
+    "name": "불고기 버거",
+    "image": "../images/burger/bulgogi.png"
+  },
+  {
+    "id": 11,
+    "name": "슈슈 버거",
+    "image": "../images/burger/supreme_shrimp.png"
+  },
+  {
+    "id": 12,
+    "name": "슈비 버거",
+    "image": "../images/burger/shrimp_beef.png"
+  },
+  {
+    "id": 13,
+    "name": "베이컨 토마토 디럭스",
+    "image": "../images/burger/bacon_tomato_deluxe.png"
+  },
+  {
+    "id": 14,
+    "name": "더블 쿼터파운더 치즈",
+    "image": "../images/burger/double_quarter_pounder.png"
+  },
+  {
+    "id": 15,
+    "name": "쿼터파운더 치즈",
+    "image": "../images/burger/quarter_pounder.png"
+  },
+  {
+    "id": 16,
+    "name": "치즈버거",
+    "image": "../images/burger/cheese.png"
+  },
+  {
+    "id": 17,
+    "name": "더블 치즈버거",
+    "image": "../images/burger/double_cheese.png"
+  },
+  {
+    "id": 18,
+    "name": "햄버거",
+    "image": "../images/burger/ham.png"
   }
 ]
