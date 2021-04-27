@@ -1,12 +1,19 @@
 import React from 'react';
-import Language from '../components/Language';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
   return (
-    <section>
-      <Language />
-    </section>
+    <div className='container'>
+      <img
+        id='main_image'
+        src='https://www.mcdonalds.co.kr/upload/main/banner/1617176534703.png'
+        alt='Filet-O-Fish'
+      />
+      <Link to='/Order'>
+        <button>주문 시작</button>
+      </Link>
+    </div>
   );
 }
 

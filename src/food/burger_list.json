@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "필레 오 피쉬",
+    "image": "../images/burger/filet_o_fish.png"
+  },
+  {
+    "id": 2,
+    "name": "더블 필레오피쉬",
+    "image": "../images/burger/double_filet_o_fish.png"
+  }
+]

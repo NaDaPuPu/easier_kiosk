@@ -1,0 +1,31 @@
+.container {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container button {
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: SpeedeeK, 'Malgun Gothic', '맑은 고딕', Dotum, 돋움, Arial,
+    sans-serif;
+  color: #292929;
+  border-radius: 13px;
+  background-color: #ffbc0d;
+}
+
+.container button:hover {
+  filter: brightness(1.1);
+}
+
+.container button:active {
+  filter: brightness(0.9);
+}
+
+.main_image {
+  width: 100%;
+}
