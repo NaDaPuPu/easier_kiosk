@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "맥윙",
+    "image": "../images/side/mcwings.png"
+  },
+  {
+    "id": 2,
+    "name": "상하이 치킨 스낵랩",
+    "image": "../images/side/shanghai_chicken_snack_wrap.png"
+  },
+  {
+    "id": 3,
+    "name": "골든 모짜렐라 치즈스틱",
+    "image": "../images/side/golden_mozzarella_cheese_sticks.png"
+  }
+]
