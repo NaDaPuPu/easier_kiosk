@@ -1,22 +1,41 @@
-import React from 'react';
-import './Order.css';
-import Menu from '../components/Menu';
-import burger_list from '../food/burger_list.json';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Food from "./Food";
+import "./Order.css";
 
-function Order() {
-  console.log(burger_list);
+function Order({ match }) {
+  const { foodname } = match.params;
+  const [isChecked, setIsChecked] = useState(foodname);
+  const handleChange = (radioBtnName) => {
+    setIsChecked(radioBtnName);
+  };
+
   return (
-    <div className='container'>
-      <div className='foods'>
-        {burger_list.map((menu) => (
-          <Menu
-            key={menu.id}
-            id={menu.id}
-            image={menu.image}
-            name={menu.name}
+    <div className="order_container">
+      <div className="categories">
+        <Link to="/Order/burger">
+          <input
+            type="radio"
+            id="burger"
+            value="burger"
+            checked={foodname === "burger"}
+            onChange={() => handleChange("burger")}
           />
-        ))}
+          <label htmlFor="burger">버거</label>
+        </Link>
+        <Link to="/Order/side">
+          <input
+            type="radio"
+            id="side"
+            value="side"
+            checked={foodname === "side"}
+            onChange={() => handleChange("side")}
+          />
+          <label htmlFor="side">사이드</label>
+        </Link>
       </div>
+      <Food foodname={foodname} />
+      <footer></footer>
     </div>
   );
 }

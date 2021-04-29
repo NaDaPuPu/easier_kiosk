@@ -1,4 +1,49 @@
+.order_container {
+  display: flex;
+}
+
+.categories {
+  flex: 1;
+}
+
+.categories {
+  padding: 0;
+  list-style: none;
+}
+
+.categories label {
+  border: 1px solid #ffbc0d;
+  border-radius: 15px;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories label:hover {
+  filter: brightness(1.1);
+  background-color: #ffbc0d;
+  border: 1px solid black;
+}
+
+.categories label:active {
+  filter: brightness(0.9);
+  background-color: #ffbc0d;
+  border: 1px solid black;
+}
+
+.categories input[type="radio"]:checked + label {
+  background-color: #ffbc0d;
+  border: 1px solid black;
+}
+
 .foods {
+  flex: 4;
   display: grid;
   grid-template-columns: repeat(3, minmax(400px, 1fr));
+}
+
+.order_container footer {
+  flex: 1;
 }
