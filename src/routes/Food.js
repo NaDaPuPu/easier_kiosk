@@ -21,12 +21,14 @@ function Food({ foodname }) {
     return (
       <div className="foods">
         {side_list.map((menu) => (
-          <Menu
-            key={menu.id}
-            id={menu.id}
-            image={menu.image}
-            name={menu.name}
-          />
+          <div>
+            <Menu
+              key={menu.id}
+              id={menu.id}
+              image={menu.image}
+              name={menu.name}
+            />
+          </div>
         ))}
       </div>
     );
