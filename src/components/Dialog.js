@@ -15,7 +15,7 @@ function Dialog({
     <div className="darkBackground">
       <div className="dialogBlock">
         <h3>{title}</h3>
-        <p>{children}</p>
+        <div>{children}</div>
         <div className="buttonGroup">
           <button className="confirm" onClick={onConfirm}>
             {confirmText}

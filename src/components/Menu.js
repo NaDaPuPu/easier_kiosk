@@ -2,17 +2,19 @@ import React, { useState } from "react";
 import Dialog from "./Dialog";
 import "./Menu.css";
 
-function Menu({ name, image }) {
+function Menu({ name, image, title, select, children }) {
   const [dialog, setDialog] = useState(false);
   const onClick = () => {
     setDialog(true);
   };
   const onConfirm = () => {
     console.log("확인");
+    select("single");
     setDialog(false);
   };
   const onCancel = () => {
     console.log("취소");
+    select("single");
     setDialog(false);
   };
   return (
@@ -24,14 +26,14 @@ function Menu({ name, image }) {
         </div>
       </div>
       <Dialog
-        title="세트 선택"
+        title={title}
         confirmText="추가"
         cancelText="취소"
         onConfirm={onConfirm}
         onCancel={onCancel}
         visible={dialog}
       >
-        <img src={image} alt={name} title={name} />
+        {children}
       </Dialog>
     </>
   );

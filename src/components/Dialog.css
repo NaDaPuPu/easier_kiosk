@@ -7,11 +7,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.dialogContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dialogContainer label {
+  order: 0;
+  display: flex;
+  margin: 10px;
+}
+
+.dialogContainer label p {
+  order: 1;
+  flex-grow: 1;
+}
+
+.dialogContainer img {
+  margin: 20px;
+}
+
+.dialogContainer input[type="radio"]:checked + label {
+  background-image: none;
+  background-color: salmon;
 }
 
 .dialogBlock {
-  width: 320px;
+  max-width: 752px;
   padding: 1.5rem;
   background: white;
   border-radius: 2px;
@@ -22,7 +48,7 @@
   font-size: 1.5rem;
 }
 
-.darkBackground p {
+.darkBackground div {
   font-size: 1.125rem;
 }
 

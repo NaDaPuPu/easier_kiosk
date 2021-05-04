@@ -2,91 +2,109 @@
   {
     "id": 1,
     "name": "필레 오 피쉬",
-    "image": "../images/burger/filet_o_fish.png"
+    "image": "../images/burger/filet_o_fish.png",
+    "set_image": "../images/burger/set/filet_o_fish_set.png"
   },
   {
     "id": 2,
     "name": "더블 필레오피쉬",
-    "image": "../images/burger/double_filet_o_fish.png"
+    "image": "../images/burger/double_filet_o_fish.png",
+    "set_image": "../images/burger/set/double_filet_o_fish_set.png"
   },
   {
     "id": 3,
     "name": "1955 버거",
-    "image": "../images/burger/1955.png"
+    "image": "../images/burger/1955.png",
+    "set_image": "../images/burger/set/1955_set.png"
   },
   {
     "id": 4,
     "name": "빅맥",
-    "image": "../images/burger/big_mac.png"
+    "image": "../images/burger/big_mac.png",
+    "set_image": "../images/burger/set/big_mac_set.png"
   },
   {
     "id": 5,
     "name": "맥스파이시 상하이 버거",
-    "image": "../images/burger/mcspicy_shanghai.png"
+    "image": "../images/burger/mcspicy_shanghai.png",
+    "set_image": "../images/burger/set/mcspicy_shanghai_set.png"
   },
   {
     "id": 6,
     "name": "맥치킨",
-    "image": "../images/burger/mcchicken.png"
+    "image": "../images/burger/mcchicken.png",
+    "set_image": "../images/burger/set/mcchicken_set.png"
   },
   {
     "id": 7,
     "name": "맥치킨 모짜렐라",
-    "image": "../images/burger/mcchicken_mozzarella.png"
+    "image": "../images/burger/mcchicken_mozzarella.png",
+    "set_image": "../images/burger/set/mcchicken_mozzarella_set.png"
   },
   {
     "id": 8,
     "name": "더블 불고기 버거",
-    "image": "../images/burger/double_bulgogi.png"
+    "image": "../images/burger/double_bulgogi.png",
+    "set_image": "../images/burger/set/double_bulgogi_set.png"
   },
   {
     "id": 9,
     "name": "에그 불고기 버거",
-    "image": "../images/burger/egg_bulgogi.png"
+    "image": "../images/burger/egg_bulgogi.png",
+    "set_image": "../images/burger/set/egg_bulgogi_set.png"
   },
   {
     "id": 10,
     "name": "불고기 버거",
-    "image": "../images/burger/bulgogi.png"
+    "image": "../images/burger/bulgogi.png",
+    "set_image": "../images/burger/set/bulgogi_set.png"
   },
   {
     "id": 11,
     "name": "슈슈 버거",
-    "image": "../images/burger/supreme_shrimp.png"
+    "image": "../images/burger/supreme_shrimp.png",
+    "set_image": "../images/burger/set/supreme_shrimp_set.png"
   },
   {
     "id": 12,
     "name": "슈비 버거",
-    "image": "../images/burger/shrimp_beef.png"
+    "image": "../images/burger/shrimp_beef.png",
+    "set_image": "../images/burger/set/shrimp_beef_set.png"
   },
   {
     "id": 13,
     "name": "베이컨 토마토 디럭스",
-    "image": "../images/burger/bacon_tomato_deluxe.png"
+    "image": "../images/burger/bacon_tomato_deluxe.png",
+    "set_image": "../images/burger/set/bacon_tomato_deluxe_set.png"
   },
   {
     "id": 14,
     "name": "더블 쿼터파운더 치즈",
-    "image": "../images/burger/double_quarter_pounder.png"
+    "image": "../images/burger/double_quarter_pounder.png",
+    "set_image": "../images/burger/set/double_quarter_pounder_set.png"
   },
   {
     "id": 15,
     "name": "쿼터파운더 치즈",
-    "image": "../images/burger/quarter_pounder.png"
+    "image": "../images/burger/quarter_pounder.png",
+    "set_image": "../images/burger/set/quarter_pounder_set.png"
   },
   {
     "id": 16,
     "name": "치즈버거",
-    "image": "../images/burger/cheese.png"
+    "image": "../images/burger/cheese.png",
+    "set_image": "../images/burger/set/cheese_set.png"
   },
   {
     "id": 17,
     "name": "더블 치즈버거",
-    "image": "../images/burger/double_cheese.png"
+    "image": "../images/burger/double_cheese.png",
+    "set_image": "../images/burger/set/double_cheese_set.png"
   },
   {
     "id": 18,
     "name": "햄버거",
-    "image": "../images/burger/ham.png"
+    "image": "../images/burger/ham.png",
+    "set_image": "../images/burger/ham.png"
   }
 ]
