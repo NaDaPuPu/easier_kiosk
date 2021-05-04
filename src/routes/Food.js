@@ -65,6 +65,7 @@ function Food({ foodname }) {
               id={menu.id}
               image={menu.image}
               name={menu.name}
+              select={setIsChecked}
             ></Menu>
           </div>
         ))}
