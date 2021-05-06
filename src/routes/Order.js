@@ -1,40 +1,36 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Food from "./Food";
+import Menu from "../components/Menu";
 import "./Order.css";
 
-function Order({ match }) {
+function Order({ match, history }) {
   const { foodname } = match.params;
   const [isChecked, setIsChecked] = useState(foodname);
   const handleChange = (radioBtnName) => {
     setIsChecked(radioBtnName);
   };
-
   return (
     <div className="order_container">
       <div className="categories">
-        <Link to="/Order/burger">
-          <input
-            type="radio"
-            id="burger"
-            value="burger"
-            checked={foodname === "burger"}
-            onChange={() => handleChange("burger")}
-          />
-          <label htmlFor="burger">버거</label>
-        </Link>
-        <Link to="/Order/side">
-          <input
-            type="radio"
-            id="side"
-            value="side"
-            checked={foodname === "side"}
-            onChange={() => handleChange("side")}
-          />
-          <label htmlFor="side">사이드</label>
-        </Link>
+        <input
+          type="radio"
+          id="burger"
+          value="burger"
+          checked={isChecked === "burger"}
+          onChange={() => handleChange("burger")}
+          onClick={() => history.push("burger")}
+        />
+        <label htmlFor="burger">버거</label>
+        <input
+          type="radio"
+          id="side"
+          value="side"
+          checked={isChecked === "side"}
+          onChange={() => handleChange("side")}
+          onClick={() => history.push("side")}
+        />
+        <label htmlFor="side">사이드</label>
       </div>
-      <Food foodname={foodname} />
+      <Menu foodname={foodname} />
       <footer></footer>
     </div>
   );
