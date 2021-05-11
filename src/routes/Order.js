@@ -11,15 +11,20 @@ function Order({ match, history }) {
   };
   const [orders, setOrders] = useState([]);
   const nextId = useRef(1);
-  const onCreate = (name, price) => {
+  const onCreate = (name, price, number) => {
     const order = {
       id: nextId.current,
       name: name,
       price: price,
+      number: number,
     };
     setOrders(orders.concat(order));
 
     nextId.current += 1;
+  };
+
+  const onRemove = (id) => {
+    setOrders(orders.filter((order) => order.id !== id));
   };
   return (
     <>
@@ -48,7 +53,11 @@ function Order({ match, history }) {
         <Menu foodname={foodname} onCreate={onCreate} />
         <footer></footer>
       </div>
-      <OrderList orders={orders} />
+      <OrderList
+        orders={orders}
+        visible={orders.length > 0}
+        onRemove={onRemove}
+      />
     </>
   );
 }

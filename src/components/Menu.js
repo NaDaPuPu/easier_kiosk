@@ -18,12 +18,12 @@ function Menu({ foodname, onCreate }) {
       dialog: id,
     });
   };
-  const onConfirm = (name, price, onSet) => {
+  const onConfirm = (name, price, number, onSet) => {
     if (onSet) {
       name = name + " 세트";
     }
     console.log("확인");
-    onCreate(name, price);
+    onCreate(name, price, number);
     setInputs({
       onSet: false,
       dialog: 0,
