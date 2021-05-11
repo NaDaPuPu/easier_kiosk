@@ -53,7 +53,10 @@ function CreateOrder({
             </div>
           </div>
           <div className="buttonGroup">
-            <button className="confirm" onClick={onConfirm}>
+            <button
+              className="confirm"
+              onClick={() => onConfirm(menu.name, 0, inputs.onSet)}
+            >
               {confirmText}
             </button>
             <button className="cancel" onClick={onCancel}>

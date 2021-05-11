@@ -4,7 +4,7 @@ import side_list from "../food/side_list.json";
 import CreateOrder from "./CreateOrder";
 import "./Menu.css";
 
-function Menu({ foodname }) {
+function Menu({ foodname, onCreate }) {
   const [inputs, setInputs] = useState({
     dialog: 0,
     onSet: false,
@@ -18,8 +18,12 @@ function Menu({ foodname }) {
       dialog: id,
     });
   };
-  const onConfirm = () => {
+  const onConfirm = (name, price, onSet) => {
+    if (onSet) {
+      name = name + " 세트";
+    }
     console.log("확인");
+    onCreate(name, price);
     setInputs({
       onSet: false,
       dialog: 0,
