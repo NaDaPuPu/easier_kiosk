@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Menu from "../components/Menu";
 import OrderList from "../components/OrderList";
 import "./Order.css";
@@ -11,6 +12,11 @@ function Order({ match, history }) {
   };
   const [orders, setOrders] = useState([]);
   const nextId = useRef(1);
+
+  const result = orders.reduce((sum, currValue) => {
+    return sum + currValue.price;
+  }, 0);
+
   const onCreate = (name, price, number) => {
     const order = {
       id: nextId.current,
@@ -51,7 +57,19 @@ function Order({ match, history }) {
         </div>
         <header></header>
         <Menu foodname={foodname} onCreate={onCreate} />
-        <footer></footer>
+        <footer>
+          {orders.length > 0 ? (
+            <Link
+              to={{
+                pathname: "/Payment",
+                result: result,
+                orders: orders,
+              }}
+            >
+              <button className="next">다음</button>
+            </Link>
+          ) : null}
+        </footer>
       </div>
       <OrderList
         orders={orders}

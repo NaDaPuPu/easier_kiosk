@@ -1,4 +1,5 @@
 import React from "react";
+import "./OrderList.css";
 
 function Order({ order, onRemove }) {
   return (
@@ -15,10 +16,12 @@ function OrderList({ orders, visible, onRemove }) {
   }, 0);
   if (!visible) return null;
   return (
-    <div className="orders">
-      {orders.map((order) => (
-        <Order order={order} key={order.id} onRemove={onRemove} />
-      ))}
+    <div className="order_list">
+      <div className="orders">
+        {orders.map((order) => (
+          <Order order={order} key={order.id} onRemove={onRemove} />
+        ))}
+      </div>
       <span>{result}원</span>
     </div>
   );
