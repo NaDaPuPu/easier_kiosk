@@ -10,12 +10,16 @@ function Order({ order, onRemove }) {
 }
 
 function OrderList({ orders, visible, onRemove }) {
+  const result = orders.reduce((sum, currValue) => {
+    return sum + currValue.price;
+  }, 0);
   if (!visible) return null;
   return (
     <div className="orders">
       {orders.map((order) => (
         <Order order={order} key={order.id} onRemove={onRemove} />
       ))}
+      <span>{result}원</span>
     </div>
   );
 }

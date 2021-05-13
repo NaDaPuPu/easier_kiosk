@@ -55,7 +55,13 @@ function CreateOrder({
           <div className="buttonGroup">
             <button
               className="confirm"
-              onClick={() => onConfirm(menu.name, 0, 0, inputs.onSet)}
+              onClick={() => {
+                if (inputs.onSet) {
+                  onConfirm(menu.name + " 세트", menu.set_price, 0);
+                } else {
+                  onConfirm(menu.name, menu.price, 0);
+                }
+              }}
             >
               {confirmText}
             </button>
@@ -90,7 +96,7 @@ function CreateOrder({
           <div className="buttonGroup">
             <button
               className="confirm"
-              onClick={() => onConfirm(menu.name, 0, 0, inputs.onSet)}
+              onClick={() => onConfirm(menu.name, menu.price, 0, inputs.onSet)}
             >
               {confirmText}
             </button>
