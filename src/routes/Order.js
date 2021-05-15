@@ -61,9 +61,11 @@ function Order({ match, history }) {
           {orders.length > 0 ? (
             <Link
               to={{
-                pathname: "/Payment",
-                result: result,
-                orders: orders,
+                pathname: "/Payment/main",
+                state: {
+                  result,
+                  orders,
+                },
               }}
             >
               <button className="next">다음</button>
