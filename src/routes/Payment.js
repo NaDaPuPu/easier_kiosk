@@ -23,10 +23,12 @@ function Payment({ location, history }) {
       </div>
       <div>
         {state?.orders.map((order) => (
-          <div key={order.id}>{order.name}</div>
+          <div key={order.id}>
+            {order.name} {order.price}원 x {order.number}
+          </div>
         ))}
       </div>
-      <div className="result_price">{state?.result}</div>
+      <div className="result_price">{state?.result}원</div>
     </div>
   );
 }

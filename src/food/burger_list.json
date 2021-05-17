@@ -139,7 +139,6 @@
     "id": 18,
     "name": "햄버거",
     "image": "../images/burger/ham.png",
-    "set_image": "../images/burger/ham.png",
     "price": 2000
   }
 ]

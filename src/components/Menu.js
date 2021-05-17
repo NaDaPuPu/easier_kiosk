@@ -8,6 +8,7 @@ function Menu({ foodname, onCreate }) {
   const [inputs, setInputs] = useState({
     dialog: 0,
     onSet: false,
+    number: 1,
   });
   const burgerList = burger_list;
   const sideList = side_list;
@@ -16,17 +17,16 @@ function Menu({ foodname, onCreate }) {
     setInputs({
       ...inputs,
       dialog: id,
+      number: 1,
     });
   };
-  const onConfirm = (name, price, number, onSet) => {
-    if (onSet) {
-      name = name + " 세트";
-    }
+  const onConfirm = (foodId, name, price, number, onSet) => {
     console.log("확인");
-    onCreate(name, price, number);
+    onCreate(foodId, name, price, number, onSet);
     setInputs({
       onSet: false,
       dialog: 0,
+      number: 1,
     });
   };
   const onCancel = () => {
@@ -34,6 +34,7 @@ function Menu({ foodname, onCreate }) {
     setInputs({
       onSet: false,
       dialog: 0,
+      number: 1,
     });
   };
 
@@ -79,6 +80,7 @@ function Menu({ foodname, onCreate }) {
               confirmText="추가"
               cancelText="취소"
               inputs={inputs}
+              setInputs={setInputs}
               onConfirm={onConfirm}
               onCancel={onCancel}
             ></CreateOrder>

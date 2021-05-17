@@ -9,7 +9,7 @@ const type = {
   etc: "기타 결제",
 };
 
-function SubPayment({ match, location }) {
+function SubPayment({ match, location, history }) {
   const [visible, setVisible] = useState(false);
   const { state } = location;
   const { paymentType } = match.params;
@@ -18,8 +18,10 @@ function SubPayment({ match, location }) {
     setTimeout(() => {
       setVisible(false);
       console.log("결제 완료");
+      history.push({ pathname: "/End" });
     }, 3000);
   };
+  if (paymentType === "main") return null;
   return (
     <>
       <div className="sub_payment_container">

@@ -19,7 +19,7 @@ function CreateOrder({
   };
 
   if (inputs.dialog !== menu.id) return null;
-  if (title === "세트 추가")
+  else if (menu.set_image)
     return (
       <div className="darkBackground">
         <div className="dialogBlock">
@@ -36,6 +36,7 @@ function CreateOrder({
               />
               <label htmlFor="single">
                 <img src={menu.image} alt={menu.name} title={menu.name} />
+                <p>{menu.name}</p>
               </label>
               <input
                 type="radio"
@@ -47,19 +48,49 @@ function CreateOrder({
               />
               <label htmlFor="set">
                 <img src={menu.set_image} alt={menu.name} title={menu.name} />
+                <p>{menu.name + " 세트"}</p>
               </label>
-              <p>{menu.name}</p>
-              <p>{menu.name + " 세트"}</p>
             </div>
+          </div>
+          <div className="number_container">
+            <button
+              onClick={() => {
+                if (inputs.number > 1) {
+                  setInputs({ ...inputs, number: inputs.number - 1 });
+                }
+              }}
+            >
+              -
+            </button>
+            {inputs.number}
+            <button
+              onClick={() =>
+                setInputs({ ...inputs, number: inputs.number + 1 })
+              }
+            >
+              +
+            </button>
           </div>
           <div className="buttonGroup">
             <button
               className="confirm"
               onClick={() => {
                 if (inputs.onSet) {
-                  onConfirm(menu.name + " 세트", menu.set_price, 0);
+                  onConfirm(
+                    menu.id,
+                    menu.name + " 세트",
+                    menu.set_price,
+                    inputs.number,
+                    inputs.onSet
+                  );
                 } else {
-                  onConfirm(menu.name, menu.price, 0);
+                  onConfirm(
+                    menu.id,
+                    menu.name,
+                    menu.price,
+                    inputs.number,
+                    inputs.onSet
+                  );
                 }
               }}
             >
@@ -84,19 +115,46 @@ function CreateOrder({
                 id="single"
                 name="single"
                 value={menu.name}
-                // checked={isChecked === "single"}
-                // onChange={() => handleChange("single")}
+                checked={!inputs.onSet}
+                onChange={() => handleChange(false)}
               />
               <label htmlFor="single">
                 <img src={menu.image} alt={menu.name} title={menu.name} />
+                <p>{menu.name}</p>
               </label>
-              <p>{menu.name}</p>
             </div>
+          </div>
+          <div className="number_container">
+            <button
+              onClick={() => {
+                if (inputs.number > 1) {
+                  setInputs({ ...inputs, number: inputs.number - 1 });
+                }
+              }}
+            >
+              -
+            </button>
+            {inputs.number}
+            <button
+              onClick={() =>
+                setInputs({ ...inputs, number: inputs.number + 1 })
+              }
+            >
+              +
+            </button>
           </div>
           <div className="buttonGroup">
             <button
               className="confirm"
-              onClick={() => onConfirm(menu.name, menu.price, 0, inputs.onSet)}
+              onClick={() =>
+                onConfirm(
+                  menu.id,
+                  menu.name,
+                  menu.price,
+                  inputs.number,
+                  inputs.onSet
+                )
+              }
             >
               {confirmText}
             </button>

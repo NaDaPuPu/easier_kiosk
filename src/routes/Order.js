@@ -13,20 +13,31 @@ function Order({ match, history }) {
   const [orders, setOrders] = useState([]);
   const nextId = useRef(1);
 
-  const result = orders.reduce((sum, currValue) => {
-    return sum + currValue.price;
+  let result = orders.reduce((sum, currValue) => {
+    return sum + currValue.price * currValue.number;
   }, 0);
 
-  const onCreate = (name, price, number) => {
-    const order = {
-      id: nextId.current,
-      name: name,
-      price: price,
-      number: number,
-    };
-    setOrders(orders.concat(order));
-
-    nextId.current += 1;
+  const onCreate = (foodId, name, price, number, onSet) => {
+    if (
+      orders.find((order) => order.foodId === foodId && order.onSet === onSet)
+    ) {
+      setOrders(
+        orders.map((order) =>
+          order.foodId === foodId ? { ...order, number: number } : order
+        )
+      );
+    } else {
+      const order = {
+        id: nextId.current,
+        foodId,
+        name,
+        price,
+        number,
+        onSet,
+      };
+      setOrders(orders.concat(order));
+      nextId.current += 1;
+    }
   };
 
   const onRemove = (id) => {
@@ -75,6 +86,7 @@ function Order({ match, history }) {
       </div>
       <OrderList
         orders={orders}
+        setOrders={setOrders}
         visible={orders.length > 0}
         onRemove={onRemove}
       />
