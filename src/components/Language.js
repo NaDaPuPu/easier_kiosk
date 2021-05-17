@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Language.css';
+import React, { useState } from "react";
+import "./Language.css";
 
 function Language() {
   const [isChecked, setIsChecked] = useState(true);
@@ -9,25 +9,25 @@ function Language() {
     });
   };
   return (
-    <div className='language'>
+    <div className="language">
       <input
-        type='radio'
-        id='Korean'
-        name='radioGroup'
-        value='Korean'
+        type="radio"
+        id="Korean"
+        name="radioGroup"
+        value="Korean"
         onChange={handleChange}
         checked={isChecked}
       />
-      <label htmlFor='Korean'>한국어</label>
+      <label htmlFor="Korean">한국어</label>
       <input
-        type='radio'
-        id='English'
-        name='radioGroup'
-        value='English'
+        type="radio"
+        id="English"
+        name="radioGroup"
+        value="English"
         onChange={handleChange}
         checked={!isChecked}
       />
-      <label htmlFor='English'>English</label>
+      <label htmlFor="English">English</label>
     </div>
   );
 }

@@ -4,7 +4,8 @@ select,
 textarea,
 button,
 pre {
-  font-family: SpeedeeK, 'Malgun Gothic', '맑은 고딕', Dotum, 돋움, Arial,
+  margin: 0;
+  font-family: SpeedeeK, "Malgun Gothic", "맑은 고딕", Dotum, 돋움, Arial,
     sans-serif;
 }
 

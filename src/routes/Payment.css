@@ -1,0 +1,14 @@
+.result_price {
+  font-size: 50px;
+}
+
+.payment_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.payment_list button {
+  margin: 20px;
+  height: 300px;
+  font-size: 20px;
+}
