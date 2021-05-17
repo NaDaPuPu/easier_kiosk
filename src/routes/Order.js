@@ -23,7 +23,9 @@ function Order({ match, history }) {
     ) {
       setOrders(
         orders.map((order) =>
-          order.foodId === foodId ? { ...order, number: number } : order
+          order.foodId === foodId && order.onSet === onSet
+            ? { ...order, number: number }
+            : order
         )
       );
     } else {
