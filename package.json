@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "gh-pages": "^3.1.0",
     "global": "^4.4.0",
     "polished": "^4.1.2",
     "react": "^17.0.2",
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +41,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://nadapupu.github.io/easier_kiosk/"
 }
