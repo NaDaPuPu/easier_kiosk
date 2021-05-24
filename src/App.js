@@ -10,7 +10,7 @@ import Header from "./layouts/Header/Header";
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <Header />
       <Route path="/" component={Home} exact={true} />
       <Route path="/Order/:foodname" component={Order} />

@@ -2,41 +2,41 @@
   {
     "id": 101,
     "name": "맥윙",
-    "image": "../images/side/mcwings.png"
+    "image": "./images/side/mcwings.png"
   },
   {
     "id": 102,
     "name": "상하이 치킨 스낵랩",
-    "image": "../images/side/shanghai_chicken_snack_wrap.png"
+    "image": "./images/side/shanghai_chicken_snack_wrap.png"
   },
   {
     "id": 103,
     "name": "골든 모짜렐라 치즈스틱",
-    "image": "../images/side/golden_mozzarella_cheese_sticks.png"
+    "image": "./images/side/golden_mozzarella_cheese_sticks.png"
   },
   {
     "id": 104,
     "name": "후렌치 후라이",
-    "image": "../images/side/french_fries.png"
+    "image": "./images/side/french_fries.png"
   },
   {
     "id": 105,
     "name": "맥너겟",
-    "image": "../images/side/mcnuggets.png"
+    "image": "./images/side/mcnuggets.png"
   },
   {
     "id": 106,
     "name": "맥스파이시 치킨 텐더",
-    "image": "../images/side/mcspicy_chicken_tenders.png"
+    "image": "./images/side/mcspicy_chicken_tenders.png"
   },
   {
     "id": 107,
     "name": "해쉬 브라운",
-    "image": "../images/side/hash_brown.jpg"
+    "image": "./images/side/hash_brown.jpg"
   },
   {
     "id": 108,
     "name": "스트링 치즈",
-    "image": "../images/side/string_cheese.png"
+    "image": "./images/side/string_cheese.png"
   }
 ]
