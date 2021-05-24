@@ -1,6 +1,6 @@
 {
   "name": "easier_kiosks",
-  "homepage": "./https://nadapupu.github.io/easier_kiosk/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
