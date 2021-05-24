@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "./https://nadapupu.github.io/easier_kiosk/static/css/main.78bc4752.chunk.css",
+    "main.js": "./https://nadapupu.github.io/easier_kiosk/static/js/main.f8c83efe.chunk.js",
+    "main.js.map": "./https://nadapupu.github.io/easier_kiosk/static/js/main.f8c83efe.chunk.js.map",
+    "runtime-main.js": "./https://nadapupu.github.io/easier_kiosk/static/js/runtime-main.c6bd19d0.js",
+    "runtime-main.js.map": "./https://nadapupu.github.io/easier_kiosk/static/js/runtime-main.c6bd19d0.js.map",
+    "static/js/2.0031e4a2.chunk.js": "./https://nadapupu.github.io/easier_kiosk/static/js/2.0031e4a2.chunk.js",
+    "static/js/2.0031e4a2.chunk.js.map": "./https://nadapupu.github.io/easier_kiosk/static/js/2.0031e4a2.chunk.js.map",
+    "index.html": "./https://nadapupu.github.io/easier_kiosk/index.html",
+    "static/css/main.78bc4752.chunk.css.map": "./https://nadapupu.github.io/easier_kiosk/static/css/main.78bc4752.chunk.css.map",
+    "static/js/2.0031e4a2.chunk.js.LICENSE.txt": "./https://nadapupu.github.io/easier_kiosk/static/js/2.0031e4a2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6bd19d0.js",
+    "static/js/2.0031e4a2.chunk.js",
+    "static/css/main.78bc4752.chunk.css",
+    "static/js/main.f8c83efe.chunk.js"
+  ]
+}
